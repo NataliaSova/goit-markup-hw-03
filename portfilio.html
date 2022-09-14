@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PORTFOLIO</title>
-    <link rel="stylesheet" href="./css/styles.css"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="node_modules/modern-normalize/modern-normalize.css">
+    <link rel="stylesheet" href="./css/styles.css"/>
 </head>
 <body>
     <header>
@@ -35,51 +36,51 @@
     <main>
     <section>
         <div class="container">
-            <h1>Портфоліо</h1> 
+            <h1 class="portfolio-none">Портфоліо</h1> 
             <ul class="container-portfolio">
-                <li> <button type="button" class="portfolio-button current">Усі</button></li>
-                <li><button type="button" class="portfolio-button web-sait">Веб-сайти</button></li>
-                <li><button type="button" class="portfolio-button addition">Додатки</button></li>
-                <li><button type="button" class="portfolio-button design">Дизайн</button></li>
-                <li><button type="button" class="portfolio-button marketing">Маркетинг</button></li>
+                <li class="portfolio-li"> <button type="button" class="portfolio-button current">Усі</button></li>
+                <li class="portfolio-li"><button type="button" class="portfolio-button web-sait">Веб-сайти</button></li>
+                <li class="portfolio-li"><button type="button" class="portfolio-button addition">Додатки</button></li>
+                <li class="portfolio-li"><button type="button" class="portfolio-button design">Дизайн</button></li>
+                <li class="portfolio-li"><button type="button" class="portfolio-button marketing">Маркетинг</button></li>
             </ul>
 
             <ul class="portfolio-examples">
                 <li class="iten"><img src="./imege/portfolio/tehno.jpg" alt="people" width="370">
-                <h2 class="title-project">Технокряк</h2>
-                <p class="title-inform">Веб-сайт</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Технокряк</h2>
+                <p class="title-inform">Веб-сайт</p></div></li>
     
                 <li class="iten"><img src="./imege/portfolio/basket.jpg" alt="basketbol" width="370">
-                <h2 class="title-project">Постер New Orlean vs Golden Star</h2>
-                <p class="title-inform">Дизайн</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Постер New Orlean vs Golden Star</h2>
+                <p class="title-inform">Дизайн</p></div></li>
     
                 <li class="iten"><img src="./imege/portfolio/fich.jpg" alt="fiching" width="370">
-                <h2 class="title-project">Ресторан Seafood</h2>
-                <p class="title-inform">Додаток</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Ресторан Seafood</h2>
+                <p class="title-inform">Додаток</p></div></li>
     
                 <li class="iten"><img src="./imege/portfolio/music.jpg" alt="headphone" width="370">
-                <h2 class="title-project">Проєкт Prime</h2>
-                <p class="title-inform">Маркетинг</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Проєкт Prime</h2>
+                <p class="title-inform">Маркетинг</p></div></li>
     
                 <li class="iten"><img src="./imege/portfolio/box.jpg" alt="boxs" width="370">
-                <h2 class="title-project">Проєкт Boxes</h2>
-                <p class="title-inform">Додаток</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Проєкт Boxes</h2>
+                <p class="title-inform">Додаток</p></div></li>
 
                 <li class="iten"><img src="./imege/portfolio/noyt.jpg" alt="noutbuk" width="370">
-                <h2 class="title-project">Inspiration has no Borders</h2>
-                <p class="title-inform">Веб-сайт</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Inspiration has no Borders</h2>
+                <p class="title-inform">Веб-сайт</p></div></li>
 
                 <li class="iten"><img src="./imege/portfolio/magaz.jpg" alt="magazine" width="370">
-                <h2 class="title-project">Видання Limited Edition</h2>
+                <div class="portfolio-div"><h2 class="title-project">Видання Limited Edition</h2>
                 <p class="title-inform">Дизайн</p></li>
     
                 <li class="iten"><img src="./imege/portfolio/laibl.jpg" alt="laibl" width="370">
-                <h2 class="title-project">Проєкт LAB</h2>
-                <p class="title-inform">Маркетинг</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Проєкт LAB</h2>
+                <p class="title-inform">Маркетинг</p></div></li>
 
                 <li class="iten"><img src="./imege/portfolio/ruka.jpg" alt="hands" width="370">
-                <h2 class="title-project">Growing Business</h2>
-                <p class="title-inform">Додаток</p></li>
+                <div class="portfolio-div"><h2 class="title-project">Growing Business</h2>
+                <p class="title-inform">Додаток</p></div></li>
             </ul>
          </div>
     </section>
@@ -87,15 +88,17 @@
 
       <!---Футер-->
       <footer class="footer">
+        <div class="container">
         <a href="./index.html" class="logo">Web<span class="web-footer">Studio</span></a>
         <address>
-            <ul> 
+            <ul class="futer-ul"> 
                 <li><a class="adress" href="посиланняgooglemap" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a></li>
                 <li><a class="mail" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
                 <li><a class="phone" href="tel:+380961111111">+380961111111</a></li>
             </ul>
              
         </address>
+        </div>
     </footer>
 
 </body>
